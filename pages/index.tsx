@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 							strokeLinejoin='miter'
 						></path>
 					</svg>
-					<div className='px-32 py-16 flex flex-col justify-center'>
+					<div className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center'>
 						<div className='flex flex-col text-center gap-6 justify-center py-10 md:flex-row'>
 							<div className='md:w-1/4 w-full'>
 								<div className='border-2 bg-gray-100 border-gray-100 px-4 py-6 rounded-lg'>
@@ -159,18 +159,18 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section className='px-32 py-16 flex flex-col justify-center'>
+				<section className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center'>
 					<div className='container mx-auto flex flex-wrap'>
-						<div className='flex flex-wrap md:-m-2 -m-1'>
-							<div className='flex flex-wrap w-1/2'>
-								<div className='md:p-2 p-1 w-1/2'>
+						<div className='flex flex-col md:flex-row md:flex-wrap md:-m-2 -m-1'>
+							<div className='flex flex-wrap md:w-1/2'>
+								<div className='md:p-2 p-1 md:w-1/2'>
 									<img
 										alt='gallery'
 										className='w-full object-cover h-full object-center block'
 										src='https://dummyimage.com/500x300'
 									/>
 								</div>
-								<div className='md:p-2 p-1 w-1/2'>
+								<div className='md:p-2 p-1 md:w-1/2'>
 									<img
 										alt='gallery'
 										className='w-full object-cover h-full object-center block'
@@ -185,7 +185,7 @@ const Home: NextPage = () => {
 									/>
 								</div>
 							</div>
-							<div className='flex flex-wrap w-1/2'>
+							<div className='flex flex-wrap md:w-1/2'>
 								<div className='md:p-2 p-1 w-full'>
 									<img
 										alt='gallery'
@@ -193,14 +193,14 @@ const Home: NextPage = () => {
 										src='https://dummyimage.com/601x361'
 									/>
 								</div>
-								<div className='md:p-2 p-1 w-1/2'>
+								<div className='md:p-2 p-1 md:w-1/2'>
 									<img
 										alt='gallery'
 										className='w-full object-cover h-full object-center block'
 										src='https://dummyimage.com/502x302'
 									/>
 								</div>
-								<div className='md:p-2 p-1 w-1/2'>
+								<div className='md:p-2 p-1 md:w-1/2'>
 									<img
 										alt='gallery'
 										className='w-full object-cover h-full object-center block'
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section className='px-32 py-16 flex flex-col justify-center gap-6'>
+				<section className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center gap-6'>
 					<div style={{ left: 0, width: '100%', height: '240px', position: 'relative' }}>
 						<iframe
 							src='https://open.spotify.com/embed/album/3Y4mYm3Sc1D3Rc3jr9UVWZ?utm_source=oembed'
