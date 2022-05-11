@@ -35,8 +35,8 @@ const Home: NextPage = () => {
 				<meta property='twitter:image' content='/eul-banner.jpg'></meta>
 			</Head>
 			<main>
-				<section className='bg-eul-banner bg-center bg-no-repeat bg-cover min-h-screen'>
-					<div className='flex items-center justify-center flex-col pt-16'>
+				<section className='min-h-screen bg-center bg-no-repeat bg-cover bg-eul-banner'>
+					<div className='flex flex-col items-center justify-center pt-16'>
 						<Image
 							src='/eul-logo.png'
 							alt='Logo Estudantina Universitária de Lisboa'
@@ -54,10 +54,10 @@ const Home: NextPage = () => {
 							strokeLinejoin='miter'
 						></path>
 					</svg>
-					<div className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center'>
-						<div className='flex flex-col text-center gap-6 justify-center py-10 md:flex-row'>
-							<div className='md:w-1/4 w-full'>
-								<div className='border-2 bg-gray-100 border-gray-100 px-4 py-6 rounded-lg'>
+					<div className='flex flex-col justify-center px-10 py-6 md:px-32 md:py-16'>
+						<div className='flex flex-col justify-center gap-6 py-10 text-center md:flex-row'>
+							<div className='w-full md:w-1/4'>
+								<div className='px-4 py-6 bg-gray-100 border-2 border-gray-100 rounded-lg'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -70,12 +70,12 @@ const Home: NextPage = () => {
 										<path d='M8 17l4 4 4-4m-4-5v9'></path>
 										<path d='M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29'></path>
 									</svg>
-									<h2 className='title-font font-medium text-3xl text-gray-900'>2.7K</h2>
-									<p className='leading-relaxed'>Downloads</p>
+									<h2 className='text-3xl font-medium text-gray-900 title-font'>3</h2>
+									<p className='leading-relaxed'>Albums</p>
 								</div>
 							</div>
-							<div className='md:w-1/4 w-full'>
-								<div className='border-2 bg-gray-100 border-gray-100 px-4 py-6 rounded-lg'>
+							<div className='w-full md:w-1/4'>
+								<div className='px-4 py-6 bg-gray-100 border-2 border-gray-100 rounded-lg'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -89,12 +89,12 @@ const Home: NextPage = () => {
 										<circle cx='9' cy='7' r='4'></circle>
 										<path d='M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75'></path>
 									</svg>
-									<h2 className='title-font font-medium text-3xl text-gray-900'>1.3K</h2>
-									<p className='leading-relaxed'>Users</p>
+									<h2 className='text-3xl font-medium text-gray-900 title-font'>104</h2>
+									<p className='leading-relaxed'>Membros</p>
 								</div>
 							</div>
-							<div className='md:w-1/4 w-full'>
-								<div className='border-2 bg-gray-100 border-gray-100 px-4 py-6 rounded-lg'>
+							<div className='w-full md:w-1/4'>
+								<div className='px-4 py-6 bg-gray-100 border-2 border-gray-100 rounded-lg'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -107,12 +107,12 @@ const Home: NextPage = () => {
 										<path d='M3 18v-6a9 9 0 0118 0v6'></path>
 										<path d='M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z'></path>
 									</svg>
-									<h2 className='title-font font-medium text-3xl text-gray-900'>74</h2>
-									<p className='leading-relaxed'>Files</p>
+									<h2 className='text-3xl font-medium text-gray-900 title-font'>3033</h2>
+									<p className='leading-relaxed'>Monthly Listeners</p>
 								</div>
 							</div>
-							<div className='md:w-1/4 w-full'>
-								<div className='border-2 bg-gray-100 border-gray-100 px-4 py-6 rounded-lg'>
+							<div className='w-full md:w-1/4'>
+								<div className='px-4 py-6 bg-gray-100 border-2 border-gray-100 rounded-lg'>
 									<svg
 										fill='none'
 										stroke='currentColor'
@@ -124,14 +124,14 @@ const Home: NextPage = () => {
 									>
 										<path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'></path>
 									</svg>
-									<h2 className='title-font font-medium text-3xl text-gray-900'>30</h2>
+									<h2 className='text-3xl font-medium text-gray-900 title-font'>30</h2>
 									<p className='leading-relaxed'>Anos</p>
 								</div>
 							</div>
 						</div>
 						<div className='flex flex-wrap -m-4'>
-							<div className='p-4 md:w-1/2 w-full'>
-								<div className='h-full bg-gray-100 p-8 rounded'>
+							<div className='w-full p-4 md:w-1/2'>
+								<div className='h-full p-8 bg-gray-100 rounded'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										fill='currentColor'
@@ -140,23 +140,21 @@ const Home: NextPage = () => {
 									>
 										<path d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z'></path>
 									</svg>
-									<p className='leading-relaxed mb-6'>
-										Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before
-										they sold out fixie 90s microdosing. Tacos pinterest fanny pack venmo,
-										post-ironic heirloom try-hard pabst authentic iceland.
+									<p className='mb-6 leading-relaxed'>
+										O presente que eu quero é uma Serenata da Estudantina
 									</p>
 									<a className='inline-flex items-center'>
-										<span className='flex-grow flex flex-col'>
+										<span className='flex flex-col flex-grow'>
 											<span className='title-font font-bold text-[#0D6931]'>
-												Holden Caulfield
+												Amália Rodrigues
 											</span>
-											<span className='text-gray-500 text-sm'>UI DEVELOPER</span>
+											<span className='text-sm text-gray-500'>FADISTA</span>
 										</span>
 									</a>
 								</div>
 							</div>
-							<div className='p-4 md:w-1/2 w-full'>
-								<div className='h-full bg-gray-100 p-8 rounded'>
+							<div className='w-full p-4 md:w-1/2'>
+								<div className='h-full p-8 bg-gray-100 rounded'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
 										fill='currentColor'
@@ -165,17 +163,17 @@ const Home: NextPage = () => {
 									>
 										<path d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z'></path>
 									</svg>
-									<p className='leading-relaxed mb-6'>
+									<p className='mb-6 leading-relaxed'>
 										Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before
 										they sold out fixie 90s microdosing. Tacos pinterest fanny pack venmo,
 										post-ironic heirloom try-hard pabst authentic iceland.
 									</p>
 									<a className='inline-flex items-center'>
-										<span className='flex-grow flex flex-col'>
+										<span className='flex flex-col flex-grow'>
 											<span className='title-font font-bold text-[#0D6931]'>
 												Holden Caulfield
 											</span>
-											<span className='text-gray-500 text-sm'>UI DEVELOPER</span>
+											<span className='text-sm text-gray-500'>UI DEVELOPER</span>
 										</span>
 									</a>
 								</div>
@@ -183,51 +181,51 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center'>
-					<div className='container mx-auto flex flex-wrap'>
-						<div className='flex flex-col md:flex-row md:flex-wrap md:-m-2 -m-1'>
+				<section className='flex flex-col justify-center px-10 py-6 md:px-32 md:py-16'>
+					<div className='container flex flex-wrap mx-auto'>
+						<div className='flex flex-col -m-1 md:flex-row md:flex-wrap md:-m-2'>
 							<div className='flex flex-wrap md:w-1/2'>
-								<div className='md:p-2 p-1 md:w-1/2'>
+								<div className='p-1 md:p-2 md:w-1/2'>
 									<img
 										alt='gallery'
-										className='w-full object-cover h-full object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/500x300'
 									/>
 								</div>
-								<div className='md:p-2 p-1 md:w-1/2'>
+								<div className='p-1 md:p-2 md:w-1/2'>
 									<img
 										alt='gallery'
-										className='w-full object-cover h-full object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/501x301'
 									/>
 								</div>
-								<div className='md:p-2 p-1 w-full'>
+								<div className='w-full p-1 md:p-2'>
 									<img
 										alt='gallery'
-										className='w-full h-full object-cover object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/600x360'
 									/>
 								</div>
 							</div>
 							<div className='flex flex-wrap md:w-1/2'>
-								<div className='md:p-2 p-1 w-full'>
+								<div className='w-full p-1 md:p-2'>
 									<img
 										alt='gallery'
-										className='w-full h-full object-cover object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/601x361'
 									/>
 								</div>
-								<div className='md:p-2 p-1 md:w-1/2'>
+								<div className='p-1 md:p-2 md:w-1/2'>
 									<img
 										alt='gallery'
-										className='w-full object-cover h-full object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/502x302'
 									/>
 								</div>
-								<div className='md:p-2 p-1 md:w-1/2'>
+								<div className='p-1 md:p-2 md:w-1/2'>
 									<img
 										alt='gallery'
-										className='w-full object-cover h-full object-center block'
+										className='block object-cover object-center w-full h-full'
 										src='https://dummyimage.com/503x303'
 									/>
 								</div>
@@ -235,7 +233,7 @@ const Home: NextPage = () => {
 						</div>
 					</div>
 				</section>
-				<section className='px-10 py-6 md:px-32 md:py-16 flex flex-col justify-center gap-6'>
+				<section className='flex flex-col justify-center gap-6 px-10 py-6 md:px-32 md:py-16'>
 					<div style={{ left: 0, width: '100%', height: '240px', position: 'relative' }}>
 						<iframe
 							src='https://open.spotify.com/embed/album/3Y4mYm3Sc1D3Rc3jr9UVWZ?utm_source=oembed'
@@ -261,7 +259,7 @@ const Home: NextPage = () => {
 						></iframe>
 					</div>
 				</section>
-				<section className='flex flex-col justify-center relative'>
+				<section className='relative flex flex-col justify-center'>
 					<div className='absolute inset-0 bg-gray-300'>
 						<iframe
 							width='100%'
@@ -275,8 +273,8 @@ const Home: NextPage = () => {
 							style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
 						></iframe>
 					</div>
-					<div className='container px-5 py-24 mx-auto flex'>
-						<div className='lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md justify-center items-center gap-12'>
+					<div className='container flex px-5 py-24 mx-auto'>
+						<div className='relative z-10 flex items-center justify-center w-full gap-12 p-8 mt-10 bg-white rounded-lg shadow-md lg:w-1/3 md:w-1/2 md:ml-auto md:mt-0'>
 							<span className='w-12'>
 								<a
 									href='https://www.facebook.com/estudantinadelisboa'
@@ -330,9 +328,9 @@ const Home: NextPage = () => {
 				</section>
 			</main>
 			<footer>
-				<div className='container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col'>
-					<a className='flex title-font font-medium items-center md:justify-start justify-center text-gray-900'>
-						<div className='flex items-center justify-center flex-col'>
+				<div className='container flex flex-col items-center px-5 py-8 mx-auto sm:flex-row'>
+					<a className='flex items-center justify-center font-medium text-gray-900 title-font md:justify-start'>
+						<div className='flex flex-col items-center justify-center'>
 							<Image
 								src='/eul-logo.png'
 								alt='Logo Estudantina Universitária de Lisboa'
@@ -341,10 +339,10 @@ const Home: NextPage = () => {
 							/>
 						</div>
 					</a>
-					<p className='text-sm flex justify-center text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
+					<p className='flex justify-center mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0'>
 						© 2022 Estudantina Universitária de Lisboa
 					</p>
-					<p className='text-sm flex justify-center text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
+					<p className='flex justify-center mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0'>
 						<a
 							href='https://www.joaommota.com'
 							className='cursor-pointer'
