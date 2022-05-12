@@ -54,6 +54,8 @@ const Home: NextPage = () => {
 							strokeLinejoin='miter'
 						></path>
 					</svg>
+				</section>
+				{/* <section>
 					<div className='flex flex-col justify-center px-10 py-6 md:px-32 md:py-16'>
 						<div className='flex flex-col justify-center gap-6 py-10 text-center md:flex-row'>
 							<div className='w-full md:w-1/4'>
@@ -108,7 +110,7 @@ const Home: NextPage = () => {
 										<path d='M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z'></path>
 									</svg>
 									<h2 className='text-3xl font-medium text-gray-900 title-font'>3033</h2>
-									<p className='leading-relaxed'>Monthly Listeners</p>
+									<p className='leading-relaxed'>Ouvintes Mensais</p>
 								</div>
 							</div>
 							<div className='w-full md:w-1/4'>
@@ -180,8 +182,8 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 					</div>
-				</section>
-				<section className='flex flex-col justify-center px-10 py-6 md:px-32 md:py-16'>
+				</section> */}
+				{/* <section className='flex flex-col justify-center px-10 py-6 md:px-32 md:py-16'>
 					<div className='container flex flex-wrap mx-auto'>
 						<div className='flex flex-col -m-1 md:flex-row md:flex-wrap md:-m-2'>
 							<div className='flex flex-wrap md:w-1/2'>
@@ -232,7 +234,7 @@ const Home: NextPage = () => {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 				<section className='flex flex-col justify-center gap-6 px-10 py-6 md:px-32 md:py-16'>
 					<div style={{ left: 0, width: '100%', height: '240px', position: 'relative' }}>
 						<iframe
